@@ -14,9 +14,9 @@ Code published to Github at [2]
 if (!Array.prototype.findLastIndex) {
   Object.defineProperty(Array.prototype, "findLastIndex", {
     value: function (predicate, thisArg) {
-      let idx = this.length - 1;
+      var idx = this.length - 1;
       while (idx >= 0) {
-        const value = this[idx];
+        var value = this[idx];
         if (predicate.call(thisArg, value, idx, this)) {
           return idx;
         }
@@ -36,9 +36,9 @@ if (!Array.prototype.findLastIndex) {
 if (!Array.prototype.findLast) {
   Object.defineProperty(Array.prototype, "findLast", {
     value: function (predicate, thisArg) {
-      let idx = this.length - 1;
+      var idx = this.length - 1;
       while (idx >= 0) {
-        const value = this[idx];
+        var value = this[idx];
         if (predicate.call(thisArg, value, idx, this)) {
           return value;
         }
