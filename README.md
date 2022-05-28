@@ -31,6 +31,11 @@ Math.trunc(x); // 4
 var n = 32768;
 Number.isInteger(n); // true
 
+// Object methods
+var o = {"a": 42, "b": 12};
+Object.values(o); // [42, 12]
+Object.entries(o); // [["a", 42], ["b", 12]]
+
 // String methods
 var s = "abc";
 s.startsWith("b"); // false
@@ -39,4 +44,12 @@ s.repeat(3); // abcabcabc
 
 # Methods
 
-`ee-polyfill` includes all of the methods listed at [behnammodi/polyfill](https://github.com/behnammodi/polyfill#polyfill-includes).
+`ee-polyfill` includes all of the methods listed at [behnammodi/polyfill](https://github.com/behnammodi/polyfill#polyfill-includes), plus those listed below:
+
+## Object
+
+```javascript
+Object.values();
+Object.entries();
+Object.fromEntries();
+```
