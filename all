@@ -1,4 +1,4 @@
-require("users/aazuspan/polyfill:min/string.min.js");
-require("users/aazuspan/polyfill:min/array.min.js");
-require("users/aazuspan/polyfill:min/math.min.js");
-require("users/aazuspan/polyfill:min/number.min.js");
+require("users/aazuspan/polyfill:src/string");
+require("users/aazuspan/polyfill:src/array");
+require("users/aazuspan/polyfill:src/math");
+require("users/aazuspan/polyfill:src/number");
