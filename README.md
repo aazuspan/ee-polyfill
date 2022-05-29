@@ -19,8 +19,9 @@ New methods are automatically added to JavaScript objects. A few examples are de
 
 ```javascript
 // Array methods
-var a = ["landsat", "sentinel"];
-a.includes("sentinel"); // true
+var a = [0, [1, 1], [[8, 9, 9, 9]]];
+a.includes(0); // true
+a.flat(2); // [0, 1, 1, 8, 9, 9, 9]
 
 // Math methods
 var x = 4.05;
